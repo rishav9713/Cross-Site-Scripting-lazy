@@ -16,11 +16,13 @@ def helloWorld():
 	  "hint" : "/api/v1/users"
 	 }
 
-@app.route("/lazy/hola.txt")
+@app.route("/.well-known/security.txt")
 def security():
-	return '''
-This page for lazy People, go back and try again, buddy <br>
-Best of Luck <br>
+  return '''
+This page makes you happy but you need to hussel more... <br>
+Go and find again <br>
+<br>
+# BEST OF LUCK <br>
 '''
 
 @app.route("/.well-known/security.txt")
